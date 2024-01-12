@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    *{box-sizing: border-box;}
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+    html{
+      scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+        background-color: #86040E;}
+    .wrap{
+        width: 1280px;
+        align-items: center;
+        margin-inline:auto ;}
+    header{
+       width: 100%;
+       background-color: rgba(0, 0, 0, 0.6);
+       padding: 14px 22px ;
+       display: flex;
+       align-items: center;
+       position: fixed;
+       z-index: 1;/*原本沙士會浮在上面*/
+     }
+     h1.logo{
+        margin: 0;
+        display: block;
+        width: 80px;
+        height: 50px;
+        background-image: url(Logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: auto;
+     }
+     h1.logo a{
+        display: block;
+        width: 100%;
+        text-indent: -999px;
+        overflow: hidden;
+     }
+     nav ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        gap: 20px;
+     }
+     nav a{
+        display: block;
+        padding: 27px 29px;
+        font-family:  'Noto Sans TC', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: #ffff;
+     }
+    .one{
+       background-color: aqua;
+       display: block;
+       width: 100%;
+       padding:0
+     }
+     h1.home{
+        margin: 0;
+        display: block;
+        width: 100%;
+        height: 703px;
+        background-image: url(home.jpg);/*圖片大小盡量符合*/
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        background-color: aqua;
+        width: 100%;
+        text-indent: -999px;
+        overflow: hidden;
+     }
+     
+     .two{
+        width: 100%;
+        background-color: #440204;
+        padding: 175px 488px;
+     }
+     .two p{
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #F6CFB2;
+        text-align: center;
+     }
+     .two h3{
+        text-align: center;
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #F6CFB2;
+     }
+
+
+
+
+     
+     .three{
+        padding: 240px 185px;
+        background-color: aqua;
+        background: linear-gradient(#440204,#86040E);
+        width: 100%;
+        align-items: center;
+        display: flex;
+     }
+
+     .three .HeySong{
+        margin-left: auto;
+        width: 286px;
+        height: 369px;
+        background-image: url(HeySong.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        text-indent: -999px;
+        overflow: hidden;
+        transform: rotate(8deg);
+     }
+     .three h4{
+        margin: 0;
+        display: block;
+        width: 160px;
+     }
+     .three p{
+        display: block;
+        width: 313px;
+     }
+     .three h3{
+        
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #F6CFB2;
+     }
+
+
+
+
+
+
+
+     .four{
+        padding: 240px 185px;
+        background-color: #440204;
+        width: 100%;
+        align-items: center;
+        display: flex;
+     }
+
+     .four .HeySongsalt{
+        width: 286px;
+        height: 369px;
+        background-image: url(HeySongsalt.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        text-indent: -999px;
+        transform: rotate(-13deg);
+        overflow: hidden;
+     }
+     .four .intro{
+      margin-left: auto;
+     }
+     .four h4{
+        margin: 0;
+        display: block;
+        width: 250px;
+     }
+     .four p{
+        display: block;
+        width: 313px;
+     }
+
+
+
+
+
+
+
+     .five{
+        padding: 240px 185px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+     }
+
+     .five .HeySongPLUS{
+        margin-left: auto;
+        width: 383px;
+        height: 434px;
+        background-image: url(HeySongPLUS\ .png);
+        background-position: center;
+        background-repeat: no-repeat;
+        text-indent: -999px;
+        overflow: hidden;
+        transform: rotate(8deg);
+     }
+     .five h4{
+        margin: 0;
+        display: block;
+        width: 250px;
+     }
+     .five p{
+        display: block;
+        width: 313px;
+     }
+     .five h3{
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #F6CFB2;
+     }
+
+
+
+
+
+
+
+
+
+     .six{
+        padding: 250px 70px;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#86040E,#440204,#86040E);
+      }
+      .vidio{
+         width: 960px;
+         height: 540px;
+         background-color: aquamarine;
+         margin-inline: auto;
+         position: relative;
+         border-radius: 20px;
+         overflow: hidden;
+      }
+
+
+
+
+
+     footer{
+        background-color: #440204;
+        text-align: center;/*置中*/
+        padding: 50px;
+        
+     }
+     h5{
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        color: #F6CFB2;
+        margin: 0;
+     }
+     footer .footerlogo{
+        margin: 20px;
+     }
+
+     
+
+     
+
+
+     
+
+
+
+
+
+
+     h3{
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #F6CFB2;
+     }
+     h4{
+        margin: 0;
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: #F6CFB2;
+     }
+     p{
+        font-family:  'Noto Sans TC', sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+        color: #F6CFB2;
+     }
+
+
+
+
+.top{
+   display: flex;/*連結不具區塊屬性，需要另加display: block*/
+   width: 60px;
+   height: 60px;
+   color: #ffff;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   font-family:  'Noto Sans TC', sans-serif;
+   font-weight: 700;
+   font-size: 18px;
+   border-radius: 27px;
+   position:fixed;
+   top: 590px;
+   left: 1110px;
+   z-index: 0;
+
+
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <a href="#" class="top">TOP</a>
+  
+
+    <header>
+        <h1 class="logo"><a href="#" title="LOGO">Logo </a></h1>
+        <nav> 
+         <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li> <a href="#">LINE UP</a></li>
+        <li><a href="#">MOVIE</a></li>
+         </ul>  
+        </nav>
+    </header>
+    <section>
+            <section class="one">
+                <h1 class="home">HOME</h1>
+            </section>
+            <section class="two">
+                <h3>ABOUT</h3>
+                <p>黑松沙士1950年上市，</p>
+                <p>為代表台灣精神的經典飲料之一，</p>
+                <p>以「熱情、夢想、實踐」</p>
+                <p>鼓勵年輕人勇敢追夢，</p>
+                <p>因為敢傻就是我的本事!</p>
+            </section>
+            <section class="three">
+                <div class="intro">
+                  <h3>LINE UP</h3>
+                <h4>黑松沙士</h4>
+                <p>黑松沙士經獨特調配及生產技術，製成具有獨家口味、顏色、泡沫細膩持久，完全不添加防腐劑與咖啡因，不含磷酸。氣味十足之碳酸飲料，容量更多更划算。</p>
+               </div>
+                    <div class="HeySong">HeySong</div>
+            </section>
+            <section class="four">
+                <div class="HeySongsalt">HeySongsalt</div>
+                <div class="intro">
+                <h4>黑松加鹽沙士</h4>
+                <p>黑松沙士提供最道地的加鹽配方，清涼有勁。</p>
+               </div>
+            </section>
+            <section class="five">
+                <div class="intro">
+                <h4>黑松沙士PLUS強碳酸</h4>
+                <p>「黑松沙士PLUS強碳酸」以高含氣量碳酸搭配強烈酸感，不只比一般碳酸氣泡更強勁，添加1,000毫克檸檬酸，清爽刺激更暢快。</p>
+               </div> 
+               <div class="HeySongPLUS">HeySongPLUS</div>
+            </section>
+
+
+            <section class="six">
+                <h3>MOVIE</h3>
+                <div class="video">
+                     <iframe width="960" height="540" src="https://www.youtube.com/embed/QHZ_a1eIWKo?si=narfM_e1ZdkQA3JR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </video>
+              </div>
+                </section>
+                <footer>
+                    <div class="footerlogo"><img src="Logo_footer.png" alt=""></div>
+                    <div class="intro">
+                     <h5>106 台北市大安區信義路四段296號3樓</h5>
+                    <h5>消費者服務專線 ｜ 0800-211-080</h5>
+                    </div>
+                    
+                </footer>
+    </section>
+    </div>
+</body>
+</html>
